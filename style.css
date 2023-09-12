@@ -212,3 +212,65 @@ li>a{
     width: 80px;
     border-radius: 50%;
 }
+
+/********************** Menu Section ***************/
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 50px;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("./assets/img/Section-Background.png");
+    background-size: fit-content;
+   
+    background-repeat: repeat;
+    position: relative;
+
+}
+.menu-lelf-col, .menu-right-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+}
+.menu-course-meal{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+.menu-course-item{
+    width: 80%;
+}
+.menu-course-title{
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    color: #CC9900;
+}
+
+.menu-course-item-title{
+    display: flex;
+    gap: 10px;
+    color:#C89F2D;
+}
+.menu-course-item-linebreak{
+    height: 1px;
+    width: 100%;
+    border: none;
+    background-color:  #C89F2D;
+}
+.menu-course-item-description{
+    font-family: "Lato", sans-serif;
+    font-size: 11px;
+    color: #4C4C4C;
+}
