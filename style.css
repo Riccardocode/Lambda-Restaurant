@@ -10,8 +10,13 @@ font-family: 'Yeseva One', cursive; */
     padding: 0;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
 .hero{
-    height: 90vh;
+    height: 100vh;
     background-image: url("./assets/img/bg.png");
     background-size: cover;
     background-position: center;
@@ -57,7 +62,7 @@ li>a{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-top: 80px;
+    margin-top: 120px;
     align-items: center;
     height: 90vh;
     gap: 50px;
@@ -111,7 +116,7 @@ li>a{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
+    height: auto;
 }
 .image-dish img{
     width: 100%;
@@ -161,7 +166,7 @@ li>a{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 80vh;
+    height: 700px;
     color: white;
 }
 .placeholder-ingredients{
@@ -220,8 +225,10 @@ li>a{
     justify-content: flex-start;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 50px;
     width: 100vw;
-    height: 100vh;
+    
+    
 
     background-image: url("./assets/img/Section-Background.png");
     background-size: fit-content;
@@ -273,4 +280,204 @@ li>a{
     font-family: "Lato", sans-serif;
     font-size: 11px;
     color: #4C4C4C;
+}
+
+
+/**************** Reviews Section ****************/
+.reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./assets/img/bg-brochette.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+   
+   
+}
+.reviews-blackbox{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+    height: 80%;
+}
+.reviews-blackbox-title{
+    margin-top: 80px;
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    color: white;
+    
+}
+.reviews-blackbox p{
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+}
+.reviews-blackbox-quote-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+q {
+    quotes: "“" "”"; /* Specify custom quotes */
+    font-size: 16px; /* Adjust font size as needed */
+    color: #DDE0DF;
+    width: 80%;
+    display: block;
+}
+
+q::before {
+    content: open-quote; /* Use the custom opening quotation mark */
+    font-size: 2em; /* Adjust size for opening quote */
+    vertical-align: center; /* Align the opening quote to the top */
+}
+
+q::after {
+    content: close-quote; 
+    display: none;
+}
+
+q cite {
+    display: block; /* Move the cite to a new line */
+    
+    font-size: 8px; /* Adjust font size for the cite */
+}
+
+/****************** Book Form Section *************/
+.book-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url("./assets/img/Section-Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    width: 100vw;
+    
+}
+.book-form-imgs-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.book-form-imgs-group img{
+    width: 130px;
+    height: 260px;
+    border-radius: 10px;
+}
+.book-form-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+}
+.book-form-text-title{
+    font-family: 'Yeseva One', cursive;
+    font-size: 30px;
+    color: #CC9900;
+}
+.book-form-text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    color: #4C4C4C;
+    text-align: center;
+    line-height: 1.5;
+}
+.book-form-text-input-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.book-form-text-input-group-name, .book-form-text-input-group-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #C9A131;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+.book-form-text form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.book-form-text input{
+    width: 130px;
+    height: 30px;
+    border: 1px solid #C89F2D;
+    border-radius: 5px;
+}
+
+.book-form-text button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #C89F2DFA;
+    border: 1px solid #C89F2D;
+    color: white;
+}
+
+/********************* footer *******************/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    gap: 20px;
+}
+.map > iframe{
+    width: 300px;
+    height: 300px;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+.footer-text-section-title{
+    font-family: 'Yeseva One', cursive;
+    font-size: 20px;
+    
 }
